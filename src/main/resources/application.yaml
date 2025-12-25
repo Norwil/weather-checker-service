@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: weather-checker
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+weather:
+  api:
+    url: https://api.open-meteo.com
+    geocoding-url: https://geocoding-api.open-meteo.com
