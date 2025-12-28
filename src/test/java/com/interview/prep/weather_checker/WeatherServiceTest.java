@@ -32,7 +32,7 @@ public class WeatherServiceTest {
                 12.8,
                 0
         );
-        WeatherResponse response = new WeatherResponse(currentWeather);
+        WeatherResponse response = new WeatherResponse(currentWeather, 52.31, 13.24);
 
         when(weatherClient.getCurrentWeather(city)).thenReturn(response);
 

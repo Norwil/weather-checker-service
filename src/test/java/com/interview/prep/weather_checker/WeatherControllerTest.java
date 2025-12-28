@@ -27,7 +27,7 @@ public class WeatherControllerTest {
     void shouldReturnWeatherForBerlin() throws Exception {
         // Arrange
         CurrentWeather mockData = new CurrentWeather(10.0, 5.5, 1);
-        WeatherResponse mockResponse = new WeatherResponse(mockData);
+        WeatherResponse mockResponse = new WeatherResponse(mockData, 52.31, 13.24);
 
         when(weatherService.getWeather("Berlin")).thenReturn(mockResponse);
 
